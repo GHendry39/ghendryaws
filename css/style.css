@@ -172,6 +172,7 @@ footer {
   padding: 40px;
   border-radius: 6px;
   border: 3px solid var(--border-color);
+  box-shadow: 10px 5px 5px var(--color-light);
 }
 
 .form-group {
