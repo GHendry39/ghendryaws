@@ -3,7 +3,7 @@
 The projects for my AWS portfolio and the portfolio website
 Use GitHub Actions to upload to Amazon S3 Bucket
 
-https://www.ghendryaws.co.uk/
+<https://www.ghendryaws.co.uk/>
 
 ## Projects
 
@@ -13,9 +13,7 @@ https://www.ghendryaws.co.uk/
 
 ## Static Website
 
-https://www.ghendryaws.co.uk/pages/static-website.html
-
-![alt text](image.png)
+![static website screenshot](<img/static website.png>)
 
 ### Description
 
@@ -23,13 +21,13 @@ This website is hosted as a static website in an Amazon S3 bucket and published 
 
 ### Architecture
 
-![alt text](image-1.png)
+![Static website architecture](<img/Static website diagram.png>)
 
 ## WorkMail
 
 https://www.ghendryaws.co.uk/pages/workmail-email-server.html
 
-![alt text](image-2.png)
+![Workmail screenshot](<img/workmail screenshot.png>)
 
 ### Description
 
@@ -37,13 +35,13 @@ This project demonstrates the deployment and configuration of an email server us
 
 ### Architecture
 
-![alt text](image-3.png)
+![Workmail architecture](img/workmail.drawio.png)
 
 ## Cloud Resume Challenge Part 1
 
 https://www.ghendryaws.co.uk/pages/cloud-resume-challenge-part-1.html
 
-![alt text](image-4.png)
+![Cloud resume challenge screenshot](img/cloud-resume-challenge.png)
 
 ### Description
 
@@ -51,4 +49,4 @@ The Cloud Resume Challenge is a guided project to generate a resume webpage host
 
 ### Architecture
 
-![alt text](image-5.png)
+![Cloud Resume Challenge architecture](<img/Resume Challenge Architecture.drawio.png>)
