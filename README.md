@@ -13,7 +13,7 @@ Use GitHub Actions to upload to Amazon S3 Bucket
 
 ## Static Website
 
-![Static Website Architecture](<img/Website Architecture.drawio.png>)
+![alt text](<img/static website.png>)
 
 ### Description
 
@@ -21,11 +21,11 @@ This website is hosted as a static website in an Amazon S3 bucket and published 
 
 ### Architecture
 
-![Static website architecture](<img/Static website diagram.png>)
+![Static Website Architecture](<img/Website Architecture.drawio.png>)
 
 ## WorkMail
 
-https://www.ghendryaws.co.uk/pages/workmail-email-server.html
+<https://www.ghendryaws.co.uk/pages/workmail-email-server.html>
 
 ![Workmail screenshot](<img/workmail screenshot.png>)
 
@@ -39,7 +39,7 @@ This project demonstrates the deployment and configuration of an email server us
 
 ## Cloud Resume Challenge Part 1
 
-https://www.ghendryaws.co.uk/pages/cloud-resume-challenge-part-1.html
+<https://www.ghendryaws.co.uk/pages/cloud-resume-challenge-part-1.html>
 
 ![Cloud resume challenge screenshot](img/cloud-resume-challenge.png)
 
