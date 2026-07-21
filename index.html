@@ -143,7 +143,52 @@
 
     <section class="contact-section">
       <h2>Contact Me</h2>
-     <p>Contact form coming soon</p>
+          <div class="form-wrapper">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="formName">Full Name</label>
+                <input
+                  type="text"
+                  id="formName"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your name"
+                  maxlength="100"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="formEmail">Email Address</label>
+                <input
+                  type="email"
+                  id="formEmail"
+                  name="email"
+                  class="form-control"
+                  placeholder="your.email@domain.com"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="formMessage">Message</label>
+                <textarea
+                  id="formMessage"
+                  name="message"
+                  class="form-control"
+                  placeholder="Outline your project scope or objectives..."
+                  maxlength="1000"
+                  required></textarea>
+              </div>
+              <button
+                type="submit"
+                id="submit-btn"
+                class="btn"
+                style="width: 100%">
+                Send Message
+              </button>
+            </form>
+            <div
+              id="formStatus"
+              class="form-message"
+            </div>
+          </div>
     </section>
     <footer>
       <p>
