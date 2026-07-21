@@ -13,7 +13,7 @@ Use GitHub Actions to upload to Amazon S3 Bucket
 
 ## Static Website
 
-![static website screenshot](<img/static website.png>)
+![Static Website Architecture](<img/Website Architecture.drawio.png>)
 
 ### Description
 
