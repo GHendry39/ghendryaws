@@ -25,7 +25,7 @@ body {
   background-color: #fff;
   color: black;
   text-rendering: optimizeLegibility;
-  font-family: 'roboto', 'Arial', sans-serif;
+  font-family: 'Barlow', 'Arial', sans-serif;
   font-size: 28px;
 }
 
@@ -49,7 +49,7 @@ h3 {
   color: #ffffff;
   text-decoration: none;
   padding: 12px 28px;
-  font-size: 14px;
+  font-size: 1.5rem;
   font-weight: 600;
   border-radius: 4px;
   transition:
@@ -139,18 +139,16 @@ footer {
   align-items: center;
 }
 
-.main-text,
-.contact-section {
-  margin: 0 2rem;
+.main-text-container,
+.contact-section,
+.about-contents {
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .about-me {
-  background-color: #eee;
+  background-color: var(--bg-secondary);
   padding-bottom: 2rem;
-}
-
-.about-contents {
-  margin: 0 2rem;
 }
 
 .certification {
@@ -170,7 +168,7 @@ footer {
 .form-wrapper {
   max-width: 800px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: var(--bg-secondary);
   padding: 40px;
   border-radius: 6px;
   border: 3px solid var(--border-color);
@@ -192,12 +190,22 @@ footer {
 
 .form-control {
   width: 100%;
-  padding: 12px;
+  height: 50px;
+  padding: 6px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
   background-color: var(--bg-primary);
   color: var(--color-primary);
   transition: border-color var(--transition-speed) ease;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+input, textarea {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .form-control:focus {
@@ -210,9 +218,8 @@ footer {
   outline-offset: 2px;
 }
 
-textarea.form-control {
-  resize: vertical;
-  min-height: 120px;
+.form-control::placeholder {
+  font-size: .8rem;
 }
 
 .field-error {
@@ -225,7 +232,6 @@ textarea.form-control {
   margin-top: 16px;
   padding: 12px;
   border-radius: 4px;
-  display: none;
 }
 
 .form-status.success {
