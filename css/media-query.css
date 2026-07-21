@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1440px) {
+  html,
+  body {
+    font-size: 28px;
+  }
+}
+
+/* Smaller tablets to larger tablets */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 24px;
+  }
+}
+
+/* Larger phones to smaller tablets */
+@media only screen and (max-width: 767px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Smaller phones to medium phones */
+@media only screen and (max-width: 425px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .row-service {
+    width: 30%;
+  }
+
+  .row-cost {
+    width: 30%;
+  }
+}

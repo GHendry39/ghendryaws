@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WV28PC5C");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graeme Hendry AWS - Static Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../img/favicon_io/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/media-query.css" />
+  </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-J3K30KL9N7"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-J3K30KL9N7");
+  </script>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WV28PC5C"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <div class="header-logo">
+        <p>Graeme Hendry - AWS Solutions Architect</p>
+      </div>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="title">
+      <h1>Static Website</h1>
+    </section>
+
+    <section class="details">
+      <div class="description-container">
+        <div class="diagram">
+          <img src="../img/static website.png" alt="website screenshot" />
+        </div>
+        <h2>Summary</h2>
+        <p>
+          This website is hosted as a static website in an Amazon S3 bucket and
+          published via an Amazon CloudFront distribution. The domain name is
+          managed by Amazon Route 53 with SSL certificate issued by AWS
+          Certificate Manager. Deployment of the website code to Amazon S3 and
+          distribution via Amazon CloudFront is managed from a GitHub repository
+          using GitHub Actions.
+        </p>
+      </div>
+      <h2>Architecture</h2>
+      <div class="diagram">
+        <img
+          src="../img/Website Architecture.drawio.png"
+          alt="website architecture"
+        />
+      </div>
+      <div class="services">
+        <h2>Services</h2>
+        <table class="project-table">
+          <tr>
+            <th class="row-service">Service</th>
+            <th class="row-description">Description</th>
+            <th class="row-cost">Cost</th>
+          </tr>
+          <tr>
+            <td>Amazon Route 53</td>
+            <td>
+              Amazon Route 53 is a highly available and scalable Domain Name
+              System (DNS) web service.
+            </td>
+            <td>
+              <p>Domain Registration: $9/year</p>
+              <p>Hosted Zone: $0.50/month</p>
+            </td>
+          </tr>
+          <tr>
+            <td>Amazon Simple Storage Service (S3)</td>
+            <td>Amazon S3 is a highly available object storage service.</td>
+            <td>$0.01/month</td>
+          </tr>
+          <tr>
+            <td>Amazon CloudFront</td>
+            <td>
+              Amazon CloudFront speeds up distribution of static and dynamic web
+              content. When users request your content, CloudFront delivers it
+              through a worldwide network of edge locations that provide low
+              latency and high performance.
+            </td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>AWS Certification Manager</td>
+            <td>
+              AWS Certificate Manager (ACM) helps you to provision, manage, and
+              renew publicly trusted TLS/SSL certificates on AWS-based websites.
+            </td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: right">Total</td>
+            <td>$1.26/month</td>
+          </tr>
+        </table>
+        <div class="description">
+          <h2>Description</h2>
+          <p>
+            When a user asks their browser to access the site, the browser
+            requests the website code using the website URL.
+          </p>
+          <p>
+            Amazon Route 53 checks the best route for the request and gets the
+            data from the edge location and returns it to the browser. The
+            website domain was registered in Route 53.
+          </p>
+          <p>
+            Amazon Cloudfront caches the website code from Amazon S3 and
+            supplies it to the relevant edge location. This data is secured
+            using an SSL certificate supplied by Amazon Certificate manager.
+          </p>
+          <p>
+            The original website files are stored in an S3 bucket with the same
+            name as the website URL. When the developer needs to update the
+            files, he commits the new code to a GitHub repository. This triggers
+            a GitHub Actions workflow that uploads the new files to the S3
+            bucket and invalidates the CloudFront distribution to clear the
+            cache of the obsolete files. Any new request for the website files
+            causes the cache to be populated with the new code.
+          </p>
+        </div>
+        <div class="conclusion">
+          <h2>Conclusion</h2>
+          <p>
+            AWS provides a secure, available service to host static websites
+            like this one. The use of GitHub actions automates the deployment of
+            the website files to update the hosted code. This solution is
+            cheaper than hosting the website with a conventional host.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Copyright <span id="date"></span> Graeme Hendry - AWS Solutions
+        Architect
+      </p>
+    </footer>
+  </body>
+  <script>
+    document.getElementById("date").innerHTML = new Date().getFullYear();
+  </script>
+</html>

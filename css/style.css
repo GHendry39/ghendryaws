@@ -1,0 +1,188 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: black;
+  text-rendering: optimizeLegibility;
+  font-family: 'roboto', 'Arial', sans-serif;
+  font-size: 28px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-justify: auto;
+  border-bottom: 5px solid #4407ed;
+  padding: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+h3 {
+  padding: 2rem 0;
+}
+
+/* Header */
+header {
+  background-color: white;
+  color: black;
+  text-rendering: optimizeLegibility;
+  font-family: 'barlow condensed', 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav {
+  text-decoration: none;
+  text-align: right;
+  margin: 1rem;
+}
+
+.header-logo {
+  margin: 1rem;
+}
+.header-logo p {
+  font-weight: 700;
+}
+.main-nav li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 5px solid #4407ed;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  color: black;
+  text-rendering: optimizeLegibility;
+  font-size: 0.7rem;
+  font-family: 'barlow condensed', 'Arial', sans-serif;
+  text-align: center;
+  margin: 2rem;
+}
+
+/* Common */
+.title {
+  text-align: center;
+}
+
+/* Home Page */
+.home-cover {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    url(../img/SaaS-Business.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-text,
+.contact-section {
+  margin: 0 2rem;
+}
+
+.about-me {
+  background-color: #eee;
+  padding-bottom: 2rem;
+}
+
+.about-contents {
+  margin: 0 2rem;
+}
+
+.certification {
+  width: 10rem;
+  height: 10rem;
+}
+
+.cover-title {
+  color: orange;
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+}
+
+/* Project Page */
+
+.main-text {
+  margin: 2rem;
+}
+
+/* Project Page */
+.project-table {
+  table-layout: fixed;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.project-col {
+  width: 15%;
+}
+
+.thumbnail-cell img {
+  width: 90%;
+  margin: 1rem;
+}
+
+.thumbnail-cell {
+  text-align: center;
+  background-color: #fff;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: lightgrey;
+  padding: 5px;
+}
+
+.row-service {
+  width: 25%;
+}
+
+.row-cost {
+  width: 25%;
+}
+
+/* Detail Pages */
+.details {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.diagram {
+  text-align: center;
+}
+
+.diagram img {
+  width: 80%;
+}
+
+.description p {
+  padding: 0.5rem 0;
+}

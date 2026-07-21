@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WV28PC5C");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graeme Hendry AWS - Static Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../img/favicon_io/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/media-query.css" />
+  </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-J3K30KL9N7"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-J3K30KL9N7");
+  </script>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WV28PC5C"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <div class="header-logo">
+        <p>Graeme Hendry - AWS Solutions Architect</p>
+      </div>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="title">
+      <h1>WorkMail Email Server</h1>
+    </section>
+
+    <section class="details">
+      <div class="description-container">
+        <div class="diagram">
+          <img src="../img/workmail screenshot.png" alt="workmail screenshot" />
+        </div>
+        <h2>Summary</h2>
+        <p>
+          Amazon WorkMail is a managed email and calendar service that offers
+          strong security controls and support for desktop and mobile clients.
+          It uses the domain and hosted zone created for the static website.
+        </p>
+      </div>
+      <h2>Architecture</h2>
+      <div class="diagram">
+        <img src="../img/workmail.drawio.png" alt="workmail architecture" />
+      </div>
+      <div class="services">
+        <h2>Services</h2>
+        <table class="project-table">
+          <tr>
+            <th class="row-service">Service</th>
+            <th class="row-description">Description</th>
+            <th class="row-cost">Cost</th>
+          </tr>
+          <tr>
+            <td>Amazon WorkMail</td>
+            <td>
+              Amazon WorkMail helps you manage your corporate email
+              infrastructure and eliminates the need for up-front investments in
+              licensing or on-premises.
+            </td>
+            <td>$4.00/user/month (after free 30-day trial for 25 users)</td>
+          </tr>
+          <tr>
+            <td>Amazon Route 53</td>
+            <td>
+              Amazon Route 53 is a highly available and scalable Domain Name
+              System (DNS) web service.
+            </td>
+            <td>Already set up for static website</td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: right">Total</td>
+            <td>$4.00/month</td>
+          </tr>
+        </table>
+        <div class="description">
+          <h2>Description</h2>
+          <p>
+            A user can access the Amazon WorkMail account using the WorkMail web
+            app or through any standard email app such as MS Outlook etc. To
+            access the web app, they use the WorkMail app URL - in this case
+            https://ghendryaws.awsapps.com/mail. After logging in, they can
+            access their email, calendar and contacts via the web interface.
+          </p>
+          <p>
+            WorkMail adds 3 DNS records to the hosted zone - TXT Domain
+            Ownership, MX WorkMail Configuration, and CNAME Autodiscover. Amazon
+            Route 53 then routes mail requests to and from WorkMail.
+          </p>
+          <p>
+            In this case, the Route 53 hosted zone that was set up for the
+            static website project can be used to route mail requests. A new
+            hosted zone is not required especially for WorkMail.
+          </p>
+        </div>
+        <div class="conclusion">
+          <h2>Conclusion</h2>
+          <p>
+            Amazon WorkMail is a managed email and calendar service that offers
+            strong security controls and support for desktop and mobile clients.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Copyright <span id="date"></span> Graeme Hendry - AWS Solutions
+        Architect
+      </p>
+    </footer>
+  </body>
+  <script>
+    document.getElementById("date").innerHTML = new Date().getFullYear();
+  </script>
+</html>
