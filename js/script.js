@@ -43,16 +43,17 @@ form.addEventListener('submit', async function(e) {
         });
         console.log(response)
         const result = await response.json();
+        console.log(result);
 
         if (response.ok) {
             formMsg.textContent = result.message;
             formMsg.style.color = 'green';
             form.reset();
-        }
+        } else {throw new Error (result.error)}
     } catch (error) {
-        formMsg.textContent = result.error;
+        console.log(error);
+        formMsg.textContent = error;
         formMsg.style.color = 'red';
-        console.log(result.error);
     } finally {
         // Always re-enable button whether success or failure
         submitBtn.disabled = false;
